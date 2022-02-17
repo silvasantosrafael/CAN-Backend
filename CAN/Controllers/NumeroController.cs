@@ -27,8 +27,8 @@ namespace CAN.Controllers
 
         public List<NumeroWaba> Get(int id)
         {
-            NumeroWaba listaNumeroid = new NumeroWaba();
-            return listaNumeroid.Select(id);
+            NumeroWaba listaNumeroid = new NumeroWaba(id);
+            return listaNumeroid.Select();
         }
 
         public void Put([FromBody] NumeroWaba value)
