@@ -187,7 +187,6 @@
     <Compile Include="Models\ConexaoDB.cs" />
     <Compile Include="Models\NumeroWaba.cs" />
     <Compile Include="Models\NumeroWabaQueries.cs" />
-    <Compile Include="Models\Waba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

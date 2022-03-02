@@ -11,6 +11,7 @@ namespace CAN.Models
         public int Id { get; set; }
         public string Nome_Numero { get; set; }
         public string Numero { get; set; }
+        public string Waba { get; set; }
         public string Empresa { get; set; }
         public string Bm_id { get; set; }
         public DateTime Data_ativacao { get; set; }
@@ -49,6 +50,7 @@ namespace CAN.Models
                 numero.Id                    = dataReader.GetInt32   ("id");
                 numero.Nome_Numero           = dataReader.GetString  ("nome_numero");
                 numero.Numero                = dataReader.GetString  ("numero");
+                numero.Waba                  = dataReader.GetString  ("waba");
                 numero.Empresa               = dataReader.GetString  ("empresa");
                 numero.Bm_id                 = dataReader.GetString  ("bm_id");
                 numero.Data_ativacao         = dataReader.GetDateTime("data_ativacao");
@@ -84,6 +86,7 @@ namespace CAN.Models
                 numero.Id                    = dataReader.GetInt32   ("id");
                 numero.Nome_Numero           = dataReader.GetString  ("nome_numero");
                 numero.Numero                = dataReader.GetString  ("numero");
+                numero.Waba                  = dataReader.GetString  ("waba");
                 numero.Empresa               = dataReader.GetString  ("empresa");
                 numero.Bm_id                 = dataReader.GetString  ("bm_id");
                 numero.Data_ativacao         = dataReader.GetDateTime("data_ativacao");
