@@ -27,7 +27,11 @@
                         data_desativacao, 
                         parceiro, 
                         ativo, 
-                        caminho_imagem) 
+                        caminho_imagem,
+                        descricao,
+                        endereco,
+                        email,
+                        site) 
                     VALUES ('{numeroWaba.Nome_Numero}',
                             '{numeroWaba.Numero}',
                             '{numeroWaba.Bm_id}',
@@ -37,7 +41,11 @@
                             '{numeroWaba.Data_desativacao:yyyy-MM-dd HH:mm:ss}',
                             '{numeroWaba.Parceiro}',
                              {numeroWaba.Ativo},
-                            '{numeroWaba.Caminho_imagem}')";
+                            '{numeroWaba.Caminho_imagem}',
+                            '{numeroWaba.Descricao}',
+                            '{numeroWaba.Endereco}',
+                            '{numeroWaba.Email}',
+                            '{numeroWaba.Site}')";
         }    
 
         public static string Delete(int id)
@@ -59,7 +67,11 @@
                         data_desativacao = '{numeroWaba.Data_desativacao:yyyy-MM-dd HH:mm:ss}',
                         parceiro =         '{numeroWaba.Parceiro}',
                         ativo =             {numeroWaba.Ativo},
-                        caminho_imagem =   '{numeroWaba.Caminho_imagem}' 
+                        caminho_imagem =   '{numeroWaba.Caminho_imagem}',
+                        descricao =        '{numeroWaba.Descricao}',
+                        endereco =         '{numeroWaba.Endereco}',
+                        email =            '{numeroWaba.Email}',
+                        site =             '{numeroWaba.Site}'
                       WHERE 
                        `id`=                {numeroWaba.Id};";
         }

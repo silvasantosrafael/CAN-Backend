@@ -19,6 +19,12 @@ namespace CAN.Models
         public string Parceiro { get; set; }
         public int Ativo { get; set; }
         public string Caminho_imagem { get; set; }
+        public string Descricao { get; set; }
+        public string Endereco { get; set; }
+        public string Email { get; set; }
+        public string Site { get; set; }
+
+
 
         public NumeroWaba()
         {
@@ -58,8 +64,11 @@ namespace CAN.Models
                 numero.Parceiro              = dataReader.GetString  ("parceiro");
                 numero.Ativo                 = dataReader.GetInt32   ("ativo");
                 numero.Caminho_imagem        = dataReader.GetString  ("caminho_imagem");
+                numero.Descricao             = dataReader.GetString  ("Descricao");
+                numero.Endereco              = dataReader.GetString  ("Endereco");
+                numero.Email                 = dataReader.GetString  ("Email");
+                numero.Site                  = dataReader.GetString  ("Site");
 
- 
                 listaRetornoId.Add(numero);
             }
 
@@ -94,7 +103,10 @@ namespace CAN.Models
                 numero.Parceiro              = dataReader.GetString  ("parceiro");
                 numero.Ativo                 = dataReader.GetInt32   ("ativo");
                 numero.Caminho_imagem        = dataReader.GetString  ("caminho_imagem");
-
+                numero.Descricao             = dataReader.GetString  ("Descricao");
+                numero.Endereco              = dataReader.GetString  ("Endereco");
+                numero.Email                 = dataReader.GetString  ("Email");
+                numero.Site                  = dataReader.GetString  ("Site");
 
                 listaRetorno.Add(numero);
             }
