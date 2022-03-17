@@ -13,7 +13,6 @@ namespace CAN.Controllers
     [RoutePrefix("api/")]
     public class NumeroController : ApiController
     {
-     
         public void Post([FromBody] NumeroWaba value)
         {
             value.Insert();

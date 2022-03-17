@@ -36,7 +36,6 @@ namespace CAN.Models
             this.Id = id;
         }
 
-        #region Colocar estes metodos numa classe NumeroWabaRepositorio
         public List<NumeroWaba> Select()
         {
             ConexaoDB connSql = new ConexaoDB();
@@ -119,7 +118,6 @@ namespace CAN.Models
 
         public void Insert()
         {
-
             ConexaoDB connSql = new ConexaoDB();
             connSql.Conectar();
             connSql.connection.Open();
@@ -150,6 +148,5 @@ namespace CAN.Models
             connSql.comandoSQL.Dispose();
             connSql.connection.Close();
         }
-        #endregion
     }
 }
