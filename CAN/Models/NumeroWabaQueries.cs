@@ -24,7 +24,8 @@
                         waba,
                         empresa, 
                         data_ativacao, 
-                        data_desativacao, 
+                        data_desativacao,
+                        data_ultima_modificacao,
                         parceiro, 
                         ativo, 
                         caminho_imagem,
@@ -39,6 +40,7 @@
                             '{numeroWaba.Empresa}',
                             '{numeroWaba.Data_ativacao:yyyy-MM-dd HH:mm:ss}',
                             '{numeroWaba.Data_desativacao:yyyy-MM-dd HH:mm:ss}',
+                            '{numeroWaba.Data_ultima_modificacao:yyyy-MM-dd HH:mm:ss}',
                             '{numeroWaba.Parceiro}',
                              {numeroWaba.Ativo},
                             '{numeroWaba.Caminho_imagem}',
@@ -58,22 +60,23 @@
         {
             return $@"UPDATE numeros_waba 
                       SET 
-                        nome_numero =      '{numeroWaba.Nome_Numero}',
-                        numero =           '{numeroWaba.Numero}',
-                        bm_id =            '{numeroWaba.Bm_id}',
-                        waba =             '{numeroWaba.Waba}',
-                        empresa =          '{numeroWaba.Empresa}',
-                        data_ativacao =    '{numeroWaba.Data_ativacao:yyyy-MM-dd HH:mm:ss}',
-                        data_desativacao = '{numeroWaba.Data_desativacao:yyyy-MM-dd HH:mm:ss}',
-                        parceiro =         '{numeroWaba.Parceiro}',
-                        ativo =             {numeroWaba.Ativo},
-                        caminho_imagem =   '{numeroWaba.Caminho_imagem}',
-                        descricao =        '{numeroWaba.Descricao}',
-                        endereco =         '{numeroWaba.Endereco}',
-                        email =            '{numeroWaba.Email}',
-                        site =             '{numeroWaba.Site}'
+                        nome_numero =               '{numeroWaba.Nome_Numero}',
+                        numero =                    '{numeroWaba.Numero}',
+                        bm_id =                     '{numeroWaba.Bm_id}',
+                        waba =                      '{numeroWaba.Waba}',
+                        empresa =                   '{numeroWaba.Empresa}',
+                        data_ativacao =             '{numeroWaba.Data_ativacao:yyyy-MM-dd HH:mm:ss}',
+                        data_desativacao =          '{numeroWaba.Data_desativacao:yyyy-MM-dd HH:mm:ss}',
+                        data_ultima_modificacao =   '{numeroWaba.Data_ultima_modificacao:yyyy-MM-dd HH:mm:ss}',
+                        parceiro =                  '{numeroWaba.Parceiro}',
+                        ativo =                      {numeroWaba.Ativo},
+                        caminho_imagem =            '{numeroWaba.Caminho_imagem}',
+                        descricao =                 '{numeroWaba.Descricao}',
+                        endereco =                  '{numeroWaba.Endereco}',
+                        email =                     '{numeroWaba.Email}',
+                        site =                      '{numeroWaba.Site}'
                       WHERE 
-                       `id`=                {numeroWaba.Id};";
+                       `id`=                         {numeroWaba.Id};";
         }
 
     }

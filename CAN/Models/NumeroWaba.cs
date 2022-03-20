@@ -16,6 +16,7 @@ namespace CAN.Models
         public string Bm_id { get; set; }
         public DateTime Data_ativacao { get; set; }
         public DateTime Data_desativacao { get; set; }
+        public DateTime Data_ultima_modificacao { get; set; }
         public string Parceiro { get; set; }
         public int Ativo { get; set; }
         public string Caminho_imagem { get; set; }
@@ -52,21 +53,22 @@ namespace CAN.Models
             {
                 NumeroWaba numero = new NumeroWaba();
 
-                numero.Id                    = dataReader.GetInt32   ("id");
-                numero.Nome_Numero           = dataReader.GetString  ("nome_numero");
-                numero.Numero                = dataReader.GetString  ("numero");
-                numero.Waba                  = dataReader.GetString  ("waba");
-                numero.Empresa               = dataReader.GetString  ("empresa");
-                numero.Bm_id                 = dataReader.GetString  ("bm_id");
-                numero.Data_ativacao         = dataReader.GetDateTime("data_ativacao");
-                numero.Data_desativacao      = dataReader.GetDateTime("data_desativacao");
-                numero.Parceiro              = dataReader.GetString  ("parceiro");
-                numero.Ativo                 = dataReader.GetInt32   ("ativo");
-                numero.Caminho_imagem        = dataReader.GetString  ("caminho_imagem");
-                numero.Descricao             = dataReader.GetString  ("Descricao");
-                numero.Endereco              = dataReader.GetString  ("Endereco");
-                numero.Email                 = dataReader.GetString  ("Email");
-                numero.Site                  = dataReader.GetString  ("Site");
+                numero.Id                       = dataReader.GetInt32   ("id");
+                numero.Nome_Numero              = dataReader.GetString  ("nome_numero");
+                numero.Numero                   = dataReader.GetString  ("numero");
+                numero.Waba                     = dataReader.GetString  ("waba");
+                numero.Empresa                  = dataReader.GetString  ("empresa");
+                numero.Bm_id                    = dataReader.GetString  ("bm_id");
+                numero.Data_ativacao            = dataReader.GetDateTime("data_ativacao");
+                numero.Data_desativacao         = dataReader.GetDateTime("data_desativacao");
+                numero.Data_ultima_modificacao  = dataReader.GetDateTime("data_ultima_modificacao");
+                numero.Parceiro                 = dataReader.GetString  ("parceiro");
+                numero.Ativo                    = dataReader.GetInt32   ("ativo");
+                numero.Caminho_imagem           = dataReader.GetString  ("caminho_imagem");
+                numero.Descricao                = dataReader.GetString  ("Descricao");
+                numero.Endereco                 = dataReader.GetString  ("Endereco");
+                numero.Email                    = dataReader.GetString  ("Email");
+                numero.Site                     = dataReader.GetString  ("Site");
 
                 listaRetornoId.Add(numero);
             }
@@ -91,21 +93,22 @@ namespace CAN.Models
             {
                 NumeroWaba numero = new NumeroWaba();
 
-                numero.Id                    = dataReader.GetInt32   ("id");
-                numero.Nome_Numero           = dataReader.GetString  ("nome_numero");
-                numero.Numero                = dataReader.GetString  ("numero");
-                numero.Waba                  = dataReader.GetString  ("waba");
-                numero.Empresa               = dataReader.GetString  ("empresa");
-                numero.Bm_id                 = dataReader.GetString  ("bm_id");
-                numero.Data_ativacao         = dataReader.GetDateTime("data_ativacao");
-                numero.Data_desativacao      = dataReader.GetDateTime("data_desativacao");
-                numero.Parceiro              = dataReader.GetString  ("parceiro");
-                numero.Ativo                 = dataReader.GetInt32   ("ativo");
-                numero.Caminho_imagem        = dataReader.GetString  ("caminho_imagem");
-                numero.Descricao             = dataReader.GetString  ("Descricao");
-                numero.Endereco              = dataReader.GetString  ("Endereco");
-                numero.Email                 = dataReader.GetString  ("Email");
-                numero.Site                  = dataReader.GetString  ("Site");
+                numero.Id                       = dataReader.GetInt32   ("id");
+                numero.Nome_Numero              = dataReader.GetString  ("nome_numero");
+                numero.Numero                   = dataReader.GetString  ("numero");
+                numero.Waba                     = dataReader.GetString  ("waba");
+                numero.Empresa                  = dataReader.GetString  ("empresa");
+                numero.Bm_id                    = dataReader.GetString  ("bm_id");
+                numero.Data_ativacao            = dataReader.GetDateTime("data_ativacao");
+                numero.Data_desativacao         = dataReader.GetDateTime("data_desativacao");
+                numero.Data_ultima_modificacao  = dataReader.GetDateTime("data_ultima_modificacao");
+                numero.Parceiro                 = dataReader.GetString  ("parceiro");
+                numero.Ativo                    = dataReader.GetInt32   ("ativo");
+                numero.Caminho_imagem           = dataReader.GetString  ("caminho_imagem");
+                numero.Descricao                = dataReader.GetString  ("Descricao");
+                numero.Endereco                 = dataReader.GetString  ("Endereco");
+                numero.Email                    = dataReader.GetString  ("Email");
+                numero.Site                     = dataReader.GetString  ("Site");
 
                 listaRetorno.Add(numero);
             }
